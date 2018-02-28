@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+<<<<<<< HEAD
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.bebeep'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+=======
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+>>>>>>> commot local
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+<<<<<<< HEAD
+    compile 'com.android.support:appcompat-v7:23.4.0'
+=======
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:recyclerview-v7:26.+'
+>>>>>>> commot local
+    //网络框架
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+    //图片加载框架
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    //上拉刷新下拉加载
+    compile 'cn.appsdream.nestrefresh:refreshLayout:0.2'
+    //带title的轮播
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //加载动画
+    compile 'com.wang.avi:library:1.0.0'
+    //圆形进度条（上传/下载）
+    compile 'com.github.lzyzsd:circleprogress:1.0.0@aar'
+
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+}
