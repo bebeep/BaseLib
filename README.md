@@ -22,3 +22,9 @@ v1.0 包含功能：
 9、一系列自定义控件
 
 10、常用java工具类及函数。
+
+提交到github命令：
+git remote add origin git@github.com:bebeep/BaseList.git   //连接到github某个分支
+git add .    //添加所有修改到分支
+git commit -m "注释" //提交所有修改
+git push origin master  //提交到github
