@@ -39,4 +39,13 @@ git add -u
 
 git commit -m "注释"
 
-git pull
+git push
+
+
+//只提交某个文件的修改
+
+git add filename
+
+git commit -m "注释"
+
+git push 
