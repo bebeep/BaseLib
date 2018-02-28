@@ -32,3 +32,9 @@ git commit -m "注释" //提交所有修改
 
 git push origin master  //提交到github
 
+
+//只提交修改的部分
+
+git add -u
+git commit -m "注释"
+git pull
